@@ -74,19 +74,16 @@ const Hero = () => {
 
           <div className="flexBetween">
               <div>
-              <p className="regular-16 text-gray-20">Distance</p>
-              <p className="bold-20 text-white">173.28 mi</p>
+                <p className="regular-16 text-gray-20">Distance</p>
+                <p className="bold-20 text-white">173.28 mi</p>
               </div>
               <div>
-              <p className="regular-16 text-gray-20">Elevation</p>
-              <p className="bold-20 text-white">2.040 km</p>
+                <p className="regular-16 text-gray-20">Elevation</p>
+                <p className="bold-20 text-white">2.040 km</p>
               </div>
           </div>
           </div>
         </div>
-
-      {/* Location display box */}
-      {/* Not real sure how that line is getting in there. */}
     </section>
 
     )
