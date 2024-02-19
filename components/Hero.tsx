@@ -5,7 +5,7 @@ import Button from './Button'
 const Hero = () => {
   return (
     <section className="max-container padding-container flex flex-col gap-20 py-10 pb-32
-     md:gap28 lg:py-20 xl:flex-row border-2 border-red-500">
+     md:gap28 lg:py-20 xl:flex-row">
       <div className="relative z-20 flex flex-1 flex-col xl:w-1/2">
         <Image 
           src="/camp.svg" 
@@ -55,22 +55,35 @@ const Hero = () => {
       </div>
       <div className="hero-map"></div>
 
-      <div className="relative flex flex-1 items start border-2 border-blue-500">
+      <div className="relative flex flex-1 items-start">
         <div className="relative z-20 w-[268px] flex flex-col gap-8 bg-green-90 rounded-3xl px-7 py-8">
-          <p className="text-gray-30">Location</p>
-          <h1 className="text-color-white">Aguas Calientes</h1>
-          <div className="flex flex-row">
-            <div>
-              <p className="text-gray-30">Distance</p>
-              <p>Location</p>
+          
+          <div className="flex flex-col">
+            <div className="flexBetween">
+              <p className="regular-16 text-gray-20">Location</p>
+              <Image
+                src="close.svg"
+                alt="close"
+                height={24}
+                width={24}
+              />
             </div>
-            <div>
-              <p className="text-gray-30">Elevation</p>
-              <p>2.040 km</p>
-            </div>
+
+            <p className="bold-20 text-white">Aguas Calientes</p>
+          </div>
+
+          <div className="flexBetween">
+              <div>
+              <p className="regular-16 text-gray-20">Distance</p>
+              <p className="bold-20 text-white">173.28 mi</p>
+              </div>
+              <div>
+              <p className="regular-16 text-gray-20">Elevation</p>
+              <p className="bold-20 text-white">2.040 km</p>
+              </div>
+          </div>
           </div>
         </div>
-      </div>
 
       {/* Location display box */}
       {/* Not real sure how that line is getting in there. */}
