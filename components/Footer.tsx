@@ -11,8 +11,8 @@ const Footer = () => {
             <Image 
               src="/hilink-logo.svg"
               alt="logo"
-              height={74}
-              width={29}
+              height={29}
+              width={74}
             />
           </Link>
 
@@ -34,8 +34,12 @@ const Footer = () => {
               <FooterColumn title={FOOTER_CONTACT_INFO.title}>
               <ul className="regular-14 flex flex-col gap-4 text-gray-30">
                   {FOOTER_CONTACT_INFO.links.map((link) => (
-                    <Link href="/" key={link.label} className="">
-                      <p className="whitespace-nowrap">
+                    <Link 
+                      href="/" 
+                      key={link.label} 
+                      className="flex gap-4 md:flex-col lg:flex-row"
+                    >
+                      <p className="regular-16 text-black whitespace-nowrap">
                         {link.label}:
                       </p>
                       <p className="medium-14 whitespace-nowrap text-blue-70">
@@ -60,8 +64,9 @@ const Footer = () => {
             </div>
           </div>
         </div>
+
         <div className="border bg-gray-20" />
-          <p className="regular-14 w-full text-center text-gray-30">2023 ©Hilink | All rights reserved</p>
+        <p className="regular-14 w-full text-center text-gray-30">2023 ©Hilink | All rights reserved</p>
       </div>
     </footer>
   )
