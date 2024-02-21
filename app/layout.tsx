@@ -4,7 +4,7 @@ import Header from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "Travel Site Project",
+  title: "Hilink",
   description: "Feeding Wanderlust",
 };
 
